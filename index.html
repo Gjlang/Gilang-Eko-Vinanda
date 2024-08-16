@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Gilang Eko Vinanda</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Gilang Eko Vinanda</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+   
+ <!-- Video Background Section -->
+<section id="video-background">
+  <video autoplay muted loop id="bg-video">
+    <source src="./assets/images/PPPP.mp4" type="video/mp4">
+  </video>
+</section>
+
+    <section id="profile">
+      <div class="section__image-container">
+        <img src="./assets/images/Gilang.jpg" alt="Gilang Eko Vinanda" class="section__image" />
+      </div>
+      <div class="section__text">
+        <h1 class="title">Hello, I am</h1>
+        <div class="outer-headings">
+          <h1 class="title">Gilang Eko Vinanda</h1>
+          <div class="inner-headings">
+            <span>
+              Artificial Intelligence Student <br />
+              Part of Indonesia Community on Malaysia <br />
+              Head of Project Management <br />
+              APU and DeMonfort Student <br />
+            </span>
+          </div>
+        </div>
+      <div>
+      <section>
+<!-- About Section -->
+<section id="about">
+  <div class="about-text-container right-align">
+    <div class="section-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/images/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>Hackton Competition<br />Project Management on AUISS</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/images/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>Asia Pasific University<br />De Montfort University</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Dedicated student who is presently enrolled in Asia Pasific University's dual degree program in computer science.
+            with a keen interest in diving deep into various aspects of the field. Actively involved in fostering connections and cultural exchange within the vibrant Indonesian
+            community on campus. Eager to explore opportunities where I can apply my passion for technology and cultural understanding to make a
+            tangible difference
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="experience">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Experience</h1>
+  <div class="timeline">
+      <div class="timeline-item left">
+          <div class="timeline-content">
+              <h4>2023 — Present</h4>
+              <h3>Head of Project Management</h3>
+              <h4>APU Indonesian Student Society</h4>
+              <p>Leading the project management team, coordinating events, and ensuring effective communication within the organization.</p>
+              <div class="tags">
+                  <span class="tag">Event Management</span>
+                  <span class="tag">Team Work</span>
+              </div>
+          </div>
+      </div>
+      <div class="timeline-item right">
+          <div class="timeline-content">
+              <h4>2023</h4>
+              <h3>Event Division Symposium</h3>
+              <h4>APU Indonesian Student Society</h4>
+              <p>Organized and managed events for the symposium, ensuring smooth operations and attendee satisfaction.</p>
+              <div class="tags">
+                  <span class="tag">Event Management</span>
+                  <span class="tag">Coordination</span>
+              </div>
+          </div>
+      </div>
+      <div class="timeline-item left">
+          <div class="timeline-content">
+              <h4>2024</h4>
+              <h3>Head of the Event Division for Progressio</h3>
+              <p>Led the event division, overseeing the planning and execution of multiple successful events.</p>
+              <div class="tags">
+                  <span class="tag">Leadership</span>
+                  <span class="tag">Event Planning</span>
+              </div>
+          </div>
+      </div>
+      <div class="timeline-item right">
+          <div class="timeline-content">
+              <h4>2024</h4>
+              <h3>Event Division and Operator of the Congress</h3>
+              <p>Worked as part of the event division team, handling logistics and event management for the congress.</p>
+              <div class="tags">
+                  <span class="tag">Logistics</span>
+                  <span class="tag">Event Management</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section id="skills">
+  <div class="center-text">
+    <h1>My Skills</h1>
+  </div>
+  <div class="carousel">
+    <div class="carousel-card" data-skill="Python">
+      <img src="./assets/images/python-removebg-preview.png" alt="Python Icon" class="skill-icon">
+      <p>Python</p>
+    </div>
+    <div class="carousel-card" data-skill="JavaScript">
+      <img src="./assets/images/png-transparent-javascript-logo-html-javascript-logo-angle-text-rectangle-thumbnail-removebg-preview.png" alt="JavaScript Icon" class="skill-icon">
+      <p>JavaScript</p>
+    </div>
+    <div class="carousel-card" data-skill="C#">
+      <img src="./assets/images/C__-removebg-preview.png" alt="C# Icon" class="skill-icon">
+      <p>C#</p>
+    </div>
+    <div class="carousel-card" data-skill="HTML">
+      <img src="./assets/images/html-removebg-preview.png" alt="HTML Icon" class="skill-icon">
+      <p>HTML</p>
+    </div>
+    <div class="carousel-card" data-skill="CSS">
+      <img src="./assets/images/CSS-removebg-preview.png" alt="CSS Icon" class="skill-icon">
+      <p>CSS</p>
+    </div>
+    <div class="carousel-card" data-skill="SQL">
+      <img src="./assets/images/images__3_-removebg-preview.png" alt="SQL Icon" class="skill-icon">
+      <p>SQL</p>
+    </div>
+  </div>
+</section>
+        <section id="projects">
+          <h1 class="title">My Projects</h1>
+          <div class="experience-details-container">
+            <!-- Project 1 -->
+            <div class="project-container">
+              <div class="project-info">
+                <h2 class="project-title">Portfolio Website</h2>
+                <p>A responsive portfolio website built with HTML, CSS, and JavaScript.</p>
+                <div class="tech-stack">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+                <div class="btn-container">
+                  <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/'">
+                    Github
+                  </button>
+                  <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/'">
+                    Live Demo
+                  </button>
+                </div>
+              </div>
+              <div class="project-image">
+                <img src="./assets/images/Screenshot 2024-08-12 174029.png" alt="Portfolio Website" class="project-img">
+              </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-container">
+              <div class="project-info">
+                <h2 class="project-title">Chatbot</h2>
+                <p>A chatbot developed to assist users with the insight full explanation about "BEDUG", with inquiries using AI-driven responses.</p>
+                <div class="tech-stack">
+                  <span>Botpress</span>
+                </div>
+                <div class="btn-container">
+                  <button class="btn btn-color-1 project-btn" onclick="location.href='https://studio.botpress.cloud/dba67ae5-0a4a-40f0-9807-b488cc4a880f/flows/wf-main'">
+                    Link
+                  </button>
+                  <button class="btn btn-color-1 project-btn" onclick="location.href='https://drive.google.com/file/d/1CvCqhvgoUl9ftD4TenVCkAlxotJIt3ep/view?usp=sharing'">
+                    Live Demo
+                  </button>
+                </div>
+              </div>
+              <div class="project-image">
+                <img src="./assets/images/BEBU.png" alt="Chatbot" class="project-img">
+              </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-container">
+              <div class="project-info">
+                <h2 class="project-title">Booking System</h2>
+                <p>This project involves creating an efficient appointment and reservation management system in Python, utilizing the Tabulate library for a user-friendly interface.
+                   The system is designed to streamline booking processes and enhance overall user experience.</p>
+                <div class="tech-stack">
+                  <span>Python</span>
+                </div>
+                <div class="btn-container">
+                  <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/Gjlang/Bookinh-System-Using-Python'">
+                    Github
+                  </button>
+                  <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/'">
+                    Live Demo
+                  </button>
+                </div>
+              </div>
+              <div class="project-image">
+                <img src="./assets/images/hall id edited.png" alt="Booking System" class="project-img">
+              </div>
+            </div>
+          </div>
+
+        <!-- Project 4 -->
+        <div class="project-container">
+          <div class="project-info">
+            <h2 class="project-title">Printing System</h2>
+            <p>This project involves developing an advanced printing system in C# using Object-Oriented Programming (OOP), designed to calculate fees and manage discounts dynamically. 
+              The system provides robust features accessible to both administrative managers and customers, ensuring accurate billing and a seamless user experience.</p>
+            <div class="tech-stack">
+              <span>C#</span>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/Gjlang/Printing-Serivce-C-'">
+                Github
+              </button>
+              <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="project-image">
+            <img src="./assets/images/Screenshot 2024-08-12 201012.png" alt="Booking System" class="project-img">
+          </div>
+        </div>
+      </div>
+    </section>
+        
+    <section id="contact">
+      <div class="contact-container">
+        <div class="video-container">
+          <video class="contact-video" src="./assets/images/Untitled video - Made with Clipchamp.mp4" autoplay muted loop></video>
+        </div>
+        <div class="contact-form-container">
+          <p class="section__text__p1">Get in Touch</p>
+          <h1 class="title">Contact Me</h1>
+          <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+              <img
+                src="./assets/images/email.png"
+                alt="Email icon"
+                class="icon contact-icon email-icon"
+              />
+              <p><a href="mailto:gilangvinada15@gmail.com">gilangvinanda15@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+              <img
+                src="./assets/images/linkedin.png"
+                alt="LinkedIn icon"
+                class="icon contact-icon"
+              />
+              <p><a href="https://www.linkedin.com/in/gilang-eko-vinanda-77b08928b/">LinkedIn</a></p>
+            </div>
+            <div class="contact-info-container">
+              <img
+                src="./assets/images/IG-removebg-preview.png"
+                alt="Instagram icon"
+                class="icon contact-icon"
+              />
+              <p><a href="https://www.instagram.com">Instagram</a></p>
+            </div>
+            <div class="contact-info-container">
+              <img
+                src="./assets/images/github.png"
+                alt="Instagram icon"
+                class="icon contact-icon"
+              />
+              <p><a href="https://github.com/Gjlang">Github</a></p>
+
+            </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
