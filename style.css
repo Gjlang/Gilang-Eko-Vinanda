@@ -1,7 +1,3 @@
-/* GENERAL */
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +5,9 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: #000000;
-  color: rgb(255, 255, 255);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
 html {
@@ -23,7 +19,6 @@ p {
 }
 
 /* TRANSITION */
-
 a,
 .btn {
   transition: all 300ms ease;
@@ -176,51 +171,39 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
-  z-index: 0; /* Ensure overlay is above the video but below the content */
-}
-
-
-/* Optional: Add a semi-transparent overlay for better text readability */
-#video-background::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  background: rgba(0, 0, 0, 0); /* Black with 50% opacity */
   z-index: 0;
 }
 
-/* Profile Section Styling */
+/* Profile  */
 #profile {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  padding: 2rem; /* Increase the top padding */
+  padding: 2rem;
   color: white;
-  background-color: transparent; /* Make the profile section transparent */
-  animation: fadeIn 2s ease-in-out; /* Fade-in animation */
-  z-index: 2; /* Higher z-index to overlay the video */
+  background-color: #00000000; /* Semi-transparent background */
+  animation: fadeIn 2s ease-in-out;
+  z-index: 2;
 }
 
 .profile-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
+  width: 90%;
+  max-width: 1200px;
 }
 
 .section__image-container {
-  position: relative;
-  width: 450px; /* Increased width */
-  height: 400px; /* Increased height */
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 2rem;
-  animation: zoomIn 2s ease-in-out; /* Zoom-in animation */
+  margin-right: 4rem;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  animation: zoomIn 2s ease-in-out;
 }
 
 .section__image {
@@ -230,49 +213,32 @@ a:hover {
 }
 
 .section__text {
-  text-align: left;
-  z-index: 1;
-}
-
-
-.section__text p {
-  font-weight: 600;
-  margin: 0;
+  flex: 1;
 }
 
 .section__text__p1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: 0.1em;
-  animation: textFadeIn 2s ease-in-out 1s backwards; /* Delayed fade-in animation for text */
+  margin-bottom: 0.5rem;
+  animation: textFadeIn 2s ease-in-out 1s backwards;
 }
 
 .title {
-  font-size: 4rem; /* Decrease the font size from 5rem to 4rem */
+  font-size: 3.5rem;
   margin: 0;
   text-transform: uppercase;
   animation: textFadeIn 2s ease-in-out 1.5s backwards;
-  padding-left: 10px; /* Add padding to slide the text to the right */
-}
-
-.section__text .title:first-child {
-  margin-left: 30px; /* Move "I AM" slightly to the right */
+  line-height: 1.2;
 }
 
 .outer-headings {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   margin-top: 1rem;
-  margin-left: 10px; /* Add margin to move the text to the right */
 }
 
-
 .inner-headings {
-  border: 0;
-  height: 50px;
-  line-height: 50px;
-  font-size: 2rem;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   overflow: hidden;
 }
@@ -411,7 +377,6 @@ a:hover {
   }
 }
 
-
 /* Buttons */
 .btn {
   background-color: #ffffff;
@@ -467,9 +432,52 @@ a:hover {
 .btn-color-1:hover {
   background: rgb(123, 80, 172);
 }
+
+/* === removing default button style 222222*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(216, 200, 200, 0.438);
+  --animation-color: #cc96ff;
+  --fs-size: 6em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
 /* ABOUT SECTION */
 #about {
-  text-align: center; /* Center align the content */
   padding: 2rem 0;
   position: relative;
 }
@@ -490,7 +498,7 @@ a:hover {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: #a57bc4;
+  background: #cc96ff;
   border-radius: 2rem;
   border: rgb(255, 255, 255) 0.1rem solid;
   text-align: center;
@@ -501,7 +509,6 @@ a:hover {
   position: relative;
   top: -250px; /* Adjust this value to move the image higher */
 }
-
 
 .about-text-container {
   margin: 2rem auto; /* Center the text horizontally */
@@ -655,7 +662,6 @@ a:hover {
   color: #222;
 }
 
-
 /* Custom Styles for Experience and Education Boxes */
 .experience-box {
   background-color: #cc96ff; /* Change this color as needed */
@@ -668,7 +674,6 @@ a:hover {
 .professional-experience-box {
  text-align: center;
 }
-
 
 #projects {
   padding: 10rem;
@@ -763,7 +768,6 @@ a:hover {
   background-color: rgba(140, 106, 204, 0.404);
 }
 
-
 /* CONTACT SECTION */
 #contact {
   display: flex;
@@ -808,7 +812,7 @@ a:hover {
   justify-content: center;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
-  background: #785d9e;
+  background: #cc96ff;
   padding: 2rem;
   margin-top: 1rem;
 }
@@ -832,6 +836,73 @@ a:hover {
 .email-icon {
   height: 2.5rem;
 }
+
+/* New features */
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;  /* Adjust this value */
+  margin-bottom: -30px;  /* Adjust this value */
+}
+
+.social-btn {
+  cursor: pointer;
+  height: 60px;
+  width: 60px;
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+  border-radius: 100px;
+  box-shadow: 0px 10px 10px rgba(67, 29, 138, 0.795);
+  background: rgba(255, 0, 0, 0);
+  margin: 5px;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-btn img {
+  height: 40px;
+  width: 40px;
+}
+
+.social-btn span {
+  width: 0px;
+  overflow: hidden;
+  transition: 0.3s;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.social-btn:hover {
+  width: 150px;
+  border-radius: 5px;
+}
+
+.social-btn:hover span {
+  padding: 2px;
+  width: 80px;
+}
+
+/* Specific styles for different social media buttons */
+#linkedin img {
+  filter: invert(29%) sepia(85%) saturate(1780%) hue-rotate(180deg) brightness(93%) contrast(101%);
+}
+
+#github img {
+  filter: invert(100%) brightness(100%) contrast(100%);
+}
+
+#instagram img {
+  filter: invert(100%) brightness(100%) contrast(100%);
+}
+
+
+#CV img {
+  filter: invert(29%) sepia(85%) saturate(1780%) hue-rotate(180deg) brightness(93%) contrast(101%);
+}
+
 /* FOOTER */
 #footer {
   background-color: #333;

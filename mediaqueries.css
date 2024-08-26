@@ -1,103 +1,150 @@
-@media screen and (max-width: 1400px) {
-    #profile {
-      height: 83vh;
-      margin-bottom: 6rem;
-    }
-    .about-containers {
-      flex-wrap: wrap;
-    }
-    #contact,
-    #projects {
-      height: fit-content;
-    }
+/* GENERAL MEDIA QUERIES */
+
+/* For devices with a width up to 1024px (tablets and small laptops) */
+@media (max-width: 1024px) {
+  .nav-links {
+    font-size: 1.3rem; /* Smaller font size for navigation links */
   }
-  
-  @media screen and (max-width: 1200px) {
-    #desktop-nav {
-      display: none;
-    }
-    #hamburger-nav {
-      display: flex;
-    }
-    #experience,
-    .experience-details-container {
-      margin-top: 2rem;
-    }
-    #profile,
-    .section-container {
-      display: block;
-    }
-    .arrow {
-      display: none;
-    }
-    section,
-    .section-container {
-      height: fit-content;
-    }
-    section {
-      margin: 0 5%;
-    }
-    .section__pic-container {
-      width: 275px;
-      height: 275px;
-      margin: 0 auto 2rem;
-    }
-    .about-containers {
-      margin-top: 0;
-    }
+
+  .title {
+    font-size: 3rem; /* Smaller font size */
   }
-  
-  @media screen and (max-width: 600px) {
-    #contact,
-    footer {
-      height: 40vh;
-    }
-    #profile {
-      height: 83vh;
-      margin-bottom: 0;
-    }
-    article {
-      font-size: 1rem;
-    }
-    footer nav {
-      height: fit-content;
-      margin-bottom: 2rem;
-    }
-    .about-containers,
-    .contact-info-upper-container,
-    .btn-container {
-      flex-wrap: wrap;
-    }
-    .contact-info-container {
-      margin: 0;
-    }
-    .contact-info-container p,
-    .nav-links li a {
-      font-size: 1rem;
-    }
-    .experience-sub-title {
-      font-size: 1.25rem;
-    }
-    .logo {
-      font-size: 1.5rem;
-    }
-    .nav-links {
-      flex-direction: column;
-      gap: 0.5rem;
-      text-align: center;
-    }
-    .section__pic-container {
-      width: auto;
-      height: 46vw;
-      justify-content: center;
-    }
-    .section__text__p2 {
-      font-size: 1.25rem;
-    }
-    .title {
-      font-size: 2rem;
-    }
-    .text-container {
-      text-align: justify;
-    }
+
+  .section__image-container {
+    width: 100%; /* Responsive width */
+    max-width: 350px;
+    height: auto; /* Maintain aspect ratio */
   }
+
+  .about-containers {
+    flex-direction: column; /* Stack about containers vertically */
+    align-items: center;
+    padding: 0 10px; /* Add some padding */
+  }
+
+  .details-container {
+    max-width: 90%;
+  }
+
+  .timeline {
+    padding: 0 20px; /* Adjust padding for smaller screens */
+  }
+
+  .project-image {
+    max-width: 100%; /* Adjust image size */
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-container {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .contact-form-container {
+    width: 100%;
+  }
+}
+
+/* For devices with a width up to 768px (mobile devices) */
+@media (max-width: 768px) {
+  .nav-links {
+    font-size: 1.2rem; /* Smaller font size */
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .section__image-container {
+    width: 100%;
+    max-width: 300px;
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .about-containers {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5px; /* Adjust padding */
+  }
+
+  .details-container {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .timeline {
+    padding: 0 15px;
+  }
+
+  .project-image {
+    max-width: 100%; /* Adjust image size */
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-container {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .contact-form-container {
+    width: 100%;
+  }
+}
+
+/* For devices with a width up to 480px (small mobile devices) */
+@media (max-width: 480px) {
+  .nav-links {
+    font-size: 1rem; /* Smaller font size */
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .section__image-container {
+    width: 100%;
+    max-width: 250px;
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .about-containers {
+    flex-direction: column;
+    align-items: center;
+    padding: 0; /* Remove padding for small screens */
+  }
+
+  .details-container {
+    max-width: 100%;
+    padding: 0.5rem;
+  }
+
+  .timeline {
+    padding: 0 10px;
+  }
+
+  .project-image {
+    max-width: 100%; /* Adjust image size */
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-container {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .contact-form-container {
+    width: 100%;
+  }
+}
