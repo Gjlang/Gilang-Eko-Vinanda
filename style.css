@@ -1,3 +1,4 @@
+/* General Styles */
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +8,8 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  background-color: #000;
+  color: white;
   overflow-x: hidden;
 }
 
@@ -68,6 +71,16 @@ a:hover {
 
 #hamburger-nav {
   display: none;
+}
+
+@media (max-width: 768px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: block;
+  }
 }
 
 .hamburger-menu {
@@ -216,14 +229,15 @@ a:hover {
   flex: 1;
 }
 
-.section__text__p1 {
-  font-size: 1.5rem;
+.section_text_p1 {
+  font-size: 3rem;
   letter-spacing: 0.1em;
   margin-bottom: 0.5rem;
   animation: textFadeIn 2s ease-in-out 1s backwards;
 }
 
 .title {
+  color: white;
   font-size: 3.5rem;
   margin: 0;
   text-transform: uppercase;
@@ -332,6 +346,17 @@ a:hover {
   transition: transform 0.3s ease-in-out;
   margin: 0 10px;
   cursor: pointer; /* Makes the card clickable */
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    flex-direction: column;
+  }
+
+  .carousel-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
 }
 
 .carousel-card.active {
@@ -686,9 +711,19 @@ a:hover {
   align-items: center;
   margin: 3rem 0;
   padding: 1rem;
-  background-color: #785d9e00;
+  background-color: #9e5d5d00;
   border-radius: 1.5rem;
   overflow: visible; /* Allows pseudo-elements to be seen outside the box */
+}
+
+@media (max-width: 768px) {
+  .project-container {
+    flex-direction: column;
+  }
+
+  .project-image {
+    max-width: 100%;
+  }
 }
 
 /* Neon Border Animation */
@@ -768,13 +803,27 @@ a:hover {
   background-color: rgba(140, 106, 204, 0.404);
 }
 
-/* CONTACT SECTION */
 #contact {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: transparent; /* Set background transparent */
+}
+
+@media (max-width: 768px) {
+  #contact {
+    flex-direction: column;
+  }
+
+  .video-container {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .contact-form-container {
+    width: 100%;
+  }
 }
 
 .contact-container {
@@ -911,6 +960,12 @@ a:hover {
   color: white;
 }
 
+@media (max-width: 768px) {
+  #footer {
+    padding: 1rem;
+  }
+}
+
 .footer-content {
   margin-bottom: 1.5rem;
 }
@@ -942,5 +997,5 @@ a:hover {
 }
 
 .footer-icons img:hover {
-  transform: scale(1.2);
+  transform: scale(1.2);
 }
